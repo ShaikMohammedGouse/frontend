@@ -42,18 +42,6 @@
         var pw2 = document.getElementById("password2");  
         let x = document.forms["validation"]["fname"].value;
         let y = document.forms["validation"]["lname"].value;
-        if(input.value.match(mailformat))
-        {
-        alert("Validation is successfully!");
-        document.form.email.focus();
-        return true;
-        }
-        else
-        {
-        alert("You have entered an invalid email address!");
-        document.form.email.focus();
-        return false;
-        }
         //  giving the input of first name is null  msg for it
         if (x == "") {
             alert("first name must be filled out");
@@ -69,6 +57,18 @@
         } else {  
           alert("password is wrong");  
         }
+         if(input.value.match(mailformat))
+        {
+        alert("Validation is successfully!");
+        document.form.email.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid email address!");
+        document.form.email.focus();
+        return false;
+        } 
     }
         
      
